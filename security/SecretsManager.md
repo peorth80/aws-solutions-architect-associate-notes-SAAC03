@@ -8,6 +8,6 @@
 
 ## Multi Region Secrets
 - replicate secret accros regions
-- creartes replica secrets
+- creates replica secrets
 - can promote replica secrets to master
-- used for disatery recovery of rds e.g.
+- used for disaster recovery of rds e.g.

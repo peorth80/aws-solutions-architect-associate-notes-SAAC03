@@ -1,8 +1,10 @@
+# Security Groups
+
 - only allow rules
 - refrence ip or other sg
-- essential a firewall
+- essentialy a firewall
 - access to ports
-- autherized ip ranges
+- authorized ip ranges
 - inbound and outbound
 - one group to many instances
 - vpc and region bound

@@ -13,7 +13,7 @@ This is network storage attached to an [[EC2]] instance.
 - need snapshot to move AZ
 - uses provisioned capacity (Size and IOPS)
 - you get billed even if drive is not full
-- delete on terminiation is an option
+- delete on termination is an option
 - can be modified while in use (iops and capacity)
 
 ## Snapshot
@@ -41,7 +41,7 @@ This is network storage attached to an [[EC2]] instance.
 - 1 GiB - 16 TiB
 
 #### gp3
-- baselane of 3k iops and 125mibs
+- baseline of 3k iops and 125mibs
 - can be increased to 16k iops and 1k mibs
 
 #### gp2
@@ -54,14 +54,14 @@ This is network storage attached to an [[EC2]] instance.
 - high performance SSD
 - mission critical, low latency
 - 4Gib - 16TiB
-- max piops 64k for nitro ec2 
-- max piops 32k for non nitro
-- io2 ist just better
+- max iops 64k for nitro ec2 
+- max iops 32k for non nitro
+- io2 is just better
 - iops gb ratio 50:1 (10GB max 500 iops)
 
 #### io2 block express
 - sub milisecond latency
-- max piops 256k 
+- max iops 256k 
 - iops gb ratio of 1000:1
 
 ### hdds
@@ -71,7 +71,7 @@ This is network storage attached to an [[EC2]] instance.
 #### st1 - low cost hdd volume
 - designed for frequently access and throughput intensive
 - low cost
-- bit data workloads , data warehouses, log processing
+- bit data workloads, data warehouses, log processing
 - max 500mbs and 500 iops
 
 #### sc1
@@ -103,14 +103,14 @@ This is network storage attached to an [[EC2]] instance.
 - Data at rest is encrypted
 - Data is encrypted in flight between [[EC2]] and [[EBS]]
 - Snapshot is encrypted
-- Volumes created from encrypted snapshot are encrypted aswell
-- handles by aws behind the scenes
+- Volumes created from encrypted snapshot are encrypted as well
+- handled by aws behind the scenes
 - minimal impact of latency
 - uses keys from [[KMS]] (AES-256)
-- copying and unencrypted snapshot enables encryption
+- copying an unencrypted snapshot enables encryption (see bellow)
 
 ### Encrypt currently not encrypted
-- created snaphsot
+- created snapshot
 - encrypt snapshot
 - create volume from snapshot
 - attach new volume
@@ -119,5 +119,6 @@ This is network storage attached to an [[EC2]] instance.
 
 ### Raid 0
 - use if IO is more important than fault tolerance
+
 ### Raid 1
 - use if fault tolerance is more important than IO

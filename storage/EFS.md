@@ -1,14 +1,14 @@
 ![[Pasted image 20221101130307.png]]
-# Eastic File System
+# Elastic File System
 
 ## TLDR 
 High performance network file system which is pay per gb use and can attach to multiple services in multiple AZs.
 
 ## Features
 - multi AZ
-- high avalilable, scalable and expensive
+- high available, scalable and expensive
 - pay per use
-- uses [[SecurityGroup]]
+- can use [[SecurityGroup]]
 
 ## Uses cases
 - Content Management, web serving, data sharing
@@ -40,7 +40,7 @@ High performance network file system which is pay per gb use and can attach to m
 
 #### provisioned
 - set throughput regardless of size
-- use when data created is small but performance needs to be high
+- use when data created is small, but performance needs to be high
 
 ## Storage classes
 

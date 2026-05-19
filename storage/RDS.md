@@ -2,7 +2,7 @@
 # RDS
 
 ## TLDR
-Various  relational databases, manged by aws.
+Various relational databases, managed by aws.
 
 ## Features
 - scaling capacity (up to set maximum storage, every 6h max, 5 mins needs to be low storage which is less than 10% remaining) this needs to be enabled.
@@ -35,7 +35,7 @@ Various  relational databases, manged by aws.
 - ssh possible
 
 ## Security
-- if you need encrpt in transit use ssl/tls by launching the client with the --ssl_ca flag
+- if you need encrypt in transit use ssl/tls by launching the client with the --ssl_ca flag
 - can use [[KMS]] to encrypt data at rest
 
 ### Option

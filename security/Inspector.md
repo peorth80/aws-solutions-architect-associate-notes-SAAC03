@@ -7,12 +7,12 @@
 - generates Risk Score
 
 ## [[EC2]]
-- useses AWS System Manager Agent
-- anaysle against network access
+- uses AWS System Manager Agent
+- analyse against network access
 - analyse running os against known vulns
 
 ## Containers pushed to ecr
-- accessment on containers on puhs
+- access on containers on push
 
 ## Integration
 - AWS Security Hub

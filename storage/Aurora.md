@@ -6,7 +6,7 @@ AWS Created custom DB tech, very high performan. Useful for global and serverles
 
 ## Features
 - not open source
-- MySQL and Postgre
+- MySQL and Postgres
 - global
 - self healing
 - fault tolerant
@@ -15,7 +15,7 @@ AWS Created custom DB tech, very high performan. Useful for global and serverles
 - multi az
 - each az has a copy of the cluster
 - 5x faster than mysql
-- 3x fast than postgre
+- 3x fast than postgres
 - up to 15 replicas
 - faster replication
 - 20% more cost than [[RDS]]
@@ -34,7 +34,7 @@ AWS Created custom DB tech, very high performan. Useful for global and serverles
 - can enable replica autoscaling
 
 ## Custom Endpoints
-- subset of aurora instances as custom endpoint(e.g. larger instance type for analytical queries)
+- subset of aurora instances as custom endpoint (e.g. larger instance type for analytical queries)
 
 ## Aurora Serverless
 - automated db instantiation and autoscaling
@@ -84,7 +84,7 @@ AWS Created custom DB tech, very high performan. Useful for global and serverles
 - create a new aurora cluster from a existing one
 - faster than snapshot & restore
 - cost effective
-- usful to create staging
+- useful to create staging
 
 ## Lambda
 

@@ -8,5 +8,5 @@ Is hardware security device, used for cloud storage of cryptographic keys. Also 
 - HSM standard compliant
 - Can export to most other HSMs
 - hardware is managed
-- if its wiped your done, there is no restore
+- if its wiped you are done, there is no restore
 - strongly suggestet to use multi az to prevent key loss

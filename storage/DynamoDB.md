@@ -11,7 +11,7 @@ NoSQL Serverless DB. Tons of features and can be global.
 - key value doc db
 - single digit milisecond performance
 - multi az
-- fully manged
+- fully managed
 - multi master
 - backup and restore
 - in memory caching

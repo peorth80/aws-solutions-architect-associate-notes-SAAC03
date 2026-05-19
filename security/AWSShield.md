@@ -6,7 +6,7 @@ Protect your resources from DDOS Attacks.
 
 ## Features
 - is enabled by default with no additional cost
-- SYN UDP Floods, Refelction attcks or other layer3 and layer4 attacks
+- SYN UDP Floods, Reflection attacks or other layer3 and layer4 attacks
 
 ## AWS Shield Advanced 
 - optional paid service
