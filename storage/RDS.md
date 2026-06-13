@@ -49,7 +49,7 @@ Various relational databases, managed by aws.
 ## Backups
 - daily full backup during maintence window
 - transactions logs are backed up by rds every 5 mins
-- restory any point in time (5 mins ago)
+- restore any point in time (5 mins ago)
 - 1 to 35 days of retention
 - if multi az backups span multi region
 

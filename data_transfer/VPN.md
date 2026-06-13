@@ -13,12 +13,12 @@ Access AWS Resources in one or more [[VPC]]s as if they were in your on premise 
 ### AWS Managed VPN
 - over internet
 - aws managed
-- use this to take advantage of aws manged services for failover and redundency
+- use this to take advantage of aws managed services for failover and redundency
 - one Virtual Private gateway to multiple Customer Gateways
 
 #### Pro
 - reuses existing vpn equipment
-- reuses exisiting internet connection
+- reuses existing internet connection
 - highly available
 - Static routes, Border Gateway Protocol, peering and routing policies
 - single [[VPC]] target
@@ -35,7 +35,7 @@ Access AWS Resources in one or more [[VPC]]s as if they were in your on premise 
 - aws managed
 - regional router distributes traffic to different [[VPC]]
 - vpc need to be in the same region
-- multiple customer gatways for one AWS Transit Gateway
+- multiple customer gateways for one AWS Transit Gateway
 
 #### Pro
 - Same as AWS Managed VPN
@@ -62,6 +62,7 @@ Access AWS Resources in one or more [[VPC]]s as if they were in your on premise 
 
 #### Cons
 - Requires additional telecom infrastructre
+- Time to install (~2 weeks)
 
 ### AWS Transit Gateway + AWS [[DirectConnect]]
 - dedicated private network connection to region router which distributes the traffic to multiple vpcs
@@ -85,7 +86,7 @@ Access AWS Resources in one or more [[VPC]]s as if they were in your on premise 
 
 ### AWS VPN Cloud Hub
 - Connect remote branch offices in a hub-and-spoke model for primary or backup connectivity
-- connect remote to remote to remote to vpn
+- Connect remote to remote to remote to vpn
 
 #### Pros
 - Reuses existing internet connection and AWS VPN connections
@@ -94,7 +95,7 @@ Access AWS Resources in one or more [[VPC]]s as if they were in your on premise 
 
 #### Cons 
 - Network latency
-- variablility and avialabilty are dependend on internet
+- variablility and availabilty are dependend on internet
 - User managed branch office endpoints are responsible for failover implementation
 
 ### Software Site to Site VPN

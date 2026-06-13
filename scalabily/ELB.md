@@ -12,7 +12,7 @@ AWS family of load balancers. Is used to spread and control traffic to a vertica
 - health checks
 - provides https to instances
 - enforce stickyness with cookies
-- high availabliy across zones
+- high availability across zones
 - separate public traffic from private traffic
 - can be setup as internal or external
 
@@ -33,15 +33,15 @@ AWS family of load balancers. Is used to spread and control traffic to a vertica
 - port and route
 
 ## Classic Load Balancer
-- htt, https (layer 7), tcp (layer 4), ssl
+- http, https (layer 7), tcp (layer 4), ssl
 - deprecated
 - health checks tcp or http based
 - fixed hostname
 
 ## Application Load Balancer
-- http, https , websocket (layer 7)
+- http, https, websocket (layer 7)
 - need target groups
-- can use to target diffrent containers on same mashine
+- can use to target different containers on same machine
 - good for [[ECS]] and docker
 - port mapping feature
 - fixed hostname
@@ -74,15 +74,15 @@ AWS family of load balancers. Is used to spread and control traffic to a vertica
 - Private Ip Adresses
 - Application Load Balancer ([[ELB]])
 
-## Gateway Load Balacher
-- IP Protocol (layer 3, networkt)
-- Deploy scale and manage a fleed of 3rd party netwurk viurual aplicaneces
+## Gateway Load Balancer
+- IP Protocol (layer 3, network)
+- Deploy scale and manage a fleed of 3rd party network virtual apliances
 - Examples, Firewals, Instrusion Detection, Deep Packet Inspection, payload manipulations
 - GENEVE Protocol on port 6081
 
 ### Functions
 - Transparent Network Gateway, single entry exit for all trafic
-- Load Balancer distributes to your check mashienes
+- Load Balancer distributes to your check machines
 
 ### Target Groups
 - [[EC2]] Instances
@@ -126,12 +126,12 @@ AWS family of load balancers. Is used to spread and control traffic to a vertica
 - can upload own certificales
 - required for https listener
 - can add multiple to support multiple domains
-- can modify securitty policy to support older versions of SSL
+- can modify security policy to support older versions of SSL
 
 ### SNI (Server Name Indication)
 - clients can use this to specify the hostname they reach
 - how do you load multiple certs on on server to serve multiple https website on one server
-- client indicateds hostname of the target server in inital handshake
+- client indicates hostname of the target server in initial handshake
 - only for ALB or NLB or [[Cloudfront]]
 
 ### CLB
@@ -165,7 +165,7 @@ AWS family of load balancers. Is used to spread and control traffic to a vertica
 - scaling policies
 
 ### [[CloudWatch]] Alarms
-- monitor metic and scale out or in
+- monitor metric and scale out or in
 
 ### Scaling Policies
 
@@ -196,4 +196,4 @@ AWS family of load balancers. Is used to spread and control traffic to a vertica
 #### Preditive Scaling
 - Analyse historical load
 - ML
-- hands of approach
+- hands-off approach

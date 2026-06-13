@@ -1,5 +1,6 @@
 # Step Functions
 - build serverless visual works to orachastrate Lambda function
+
 ## Features
 - sequence
 - paralell
@@ -7,14 +8,16 @@
 - timeouts
 - error handling
 - human approval
+
 ## Integrations
-- Lmabda
+- Lambda
 - ec2
 - ecs
-- on prem,ise servers
+- on premise servers
 - sqs
 - api gateway
 - ...
+
 ## Use cases    
 - order fulliment
 - data processing

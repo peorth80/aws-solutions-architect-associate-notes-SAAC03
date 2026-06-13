@@ -41,7 +41,7 @@ AWS Nameserver and Domain Name register Service.
 ## Endpoint types
 
 ### Outbound
-- used by resources in [[VPC]] to resolve dns querys to resources outside of the [[VPC]]  (e.g. on premise)
+- used by resources in [[VPC]] to resolve dns queries to resources outside of the [[VPC]]  (e.g. on premise)
 
 ## Inbound
 - used by resources outside of aws to resolve name to resources inside a [[VPC]]

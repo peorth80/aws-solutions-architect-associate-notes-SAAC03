@@ -43,4 +43,4 @@ Can be used for a hybrid cloud setup, where data is produced on premise and sync
 
 ## Hardware appliance
 - Can be bought from amazon.com
-- Is a harware which will be your gateway (like a firewall)
+- Is a hardware which will be your gateway (like a firewall)

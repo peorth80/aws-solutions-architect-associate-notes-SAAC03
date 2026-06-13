@@ -32,7 +32,7 @@ The Snow Familiy is a collection of **hardware** which can be used to transfer l
 - smaller Snowball
 - 8TBs of storage
 - fits on top of a drone
-- can transfer via network aswell (collect offline transfer online)
+- can transfer via network as well (collect offline transfer online)
 
 ### Snowmobile
 - truck to transfer data

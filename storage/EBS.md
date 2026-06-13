@@ -7,7 +7,7 @@ This is network storage attached to an [[EC2]] instance.
 ## Features
 - Network Drive
 - persist Data after Termination
-- can only be mounted to one instance at once
+- can only be mounted to one instance at once (new: IO type support multi-attach)
 - limited to AZ which it was created
 - can be attached and detached quickly
 - need snapshot to move AZ

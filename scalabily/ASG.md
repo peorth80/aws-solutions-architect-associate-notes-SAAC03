@@ -52,7 +52,7 @@ A Group of [[EC2]] Instances scaled horizontally, can use an [[ELB]] or work wit
 - must wait for cooldown period expide to scale again
 
 ### Step
-- scale by multiple threshold values to diffrent configs
+- scale by multiple threshold values to different configs
 
 ### Scheduled
 - scale on predefined time window

@@ -13,7 +13,7 @@ A stack of AWS resources, more clearly the connectivity and setup options for an
 - internet gateway
 - recommended for simple public facing application
 
-#### VPC withg public and private subnets
+#### VPC with public and private subnets
 - public subnet
 - private subnet
 - internet gateway
@@ -40,18 +40,21 @@ A stack of AWS resources, more clearly the connectivity and setup options for an
 - doesn not support inter region communication
 
 ### Interface Endpoint
-- eni with private ip adress in the target subnet
+- Connect to services without passing through the internet (IE, SQS, SNS, etc)
+- ENI with private ip address in the target subnet
+- Hast cost
 
 ### Gateway Endpoint
 - only for [[S3]] and [[DynamoDB]]
 - gateway which you set as a route target 
+- Free
 
 ## VPC Peering
-- connection between 2 VPCs using private adresses
-- not transitive
+- connection between 2 VPCs using private addresses
+- not transitive (you have 3 VPC you need VPC-A -> VPC B, VPC B -> VPC C, VPC-A -> VPC-C, etc)
 - need to setup route tables
 
-### Transit Gatway
+### Transit Gateway
 - hub for multiple peering connections
 - attach options are, vpc, direct connect gateway or another transit gateway either as peering or vpn
 - MTU = max package size

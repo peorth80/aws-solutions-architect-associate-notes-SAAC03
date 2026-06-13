@@ -1,8 +1,7 @@
 # AWS Glue
 - ETL Service
 - serverless
-
-- perpare and load data for analytics
+- prepare and load data for analytics
 
 ## Job Bookmarks
 - prevent reproccessing old data

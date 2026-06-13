@@ -2,7 +2,7 @@
 # Amazon Aurora
 
 ## TLDR
-AWS Created custom DB tech, very high performan. Useful for global and serverless relational database applications.
+AWS Created custom DB tech, very high performant. Useful for global and serverless relational database applications.
 
 ## Features
 - not open source
@@ -58,7 +58,7 @@ AWS Created custom DB tech, very high performan. Useful for global and serverles
 
 ### Use cases
 - fraud detection
-- add targeting
+- ad targeting
 - sentiment analysis
 - product recommendations
 

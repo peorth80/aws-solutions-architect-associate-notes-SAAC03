@@ -1,8 +1,8 @@
 ![[Pasted image 20221031103642.png]]
-# Database Migiration Service
+# Database Migration Service
 
 ## TLDR
-Migrate an exsisting database into another one. Can also do DB shema conversion.
+Migrate an existing database into another one. Can also do DB schema conversion.
 
 ## Features
 - seamlessly migrate
@@ -18,9 +18,9 @@ Migrate an exsisting database into another one. Can also do DB shema conversion.
 - can use in transit encrypt by add ca cert to endpoint
 
 ## Sources
-- on premise databases
+- On premise databases
 - [[EC2]] instances
-- azure
+- Azure
 - [[S3]]
 - [[Aurora]]
 - [[RDS]]
@@ -43,7 +43,7 @@ Migrate an exsisting database into another one. Can also do DB shema conversion.
 
 ## Basic Schema copy
 - Create tables and indexes
-- Heterogenus migration (Orcale to MySQL e.g.)
+- Heterogenus migration (Oracle to MySQL e.g.)
 
 ## Schema conversion tool
 - Transfer DB from one schema to another
@@ -63,7 +63,7 @@ Migrate an exsisting database into another one. Can also do DB shema conversion.
 
 ### Option4 external to aws
 - Create [[Aurora]]
-- Use mysqldump to  migrate into [[Aurora]] (slower than s3 method)
+- Use mysqldump to migrate into [[Aurora]] (slower than s3 method)
 
 ### Option 5 
 - use [[DMS]]

@@ -1,7 +1,7 @@
 # choose a volume
 
 ## EBS
-- only one instace
+- only one instance (except IO)
 - single az
 - gp2 io increased via disk size
 - io1: can increase io without disksize

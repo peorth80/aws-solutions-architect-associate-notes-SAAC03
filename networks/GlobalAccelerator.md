@@ -3,7 +3,7 @@
 
 ![[Pasted image 20221101170746.png]]
 ## TLDR
-UDP compatible global endpoint to speed up networkt traffic to your VPC by using edge locations and aws private network.
+UDP compatible global endpoint to speed up network traffic to your VPC by using edge locations and aws private network.
 
 ## Features
 - network layer service
@@ -12,7 +12,6 @@ UDP compatible global endpoint to speed up networkt traffic to your VPC by using
 - Global service
 - can use weights to distribute portion of traffic
 - good fit for non http use cases
-
 
 ## Targets
 - [[ELB]] ALB
