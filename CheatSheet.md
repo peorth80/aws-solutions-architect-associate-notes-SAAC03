@@ -151,7 +151,7 @@ _*VPC, SUBNETS, NETWORKING*_
     subnet or gateway is directed. 
   * A *gateway* connects your VPC to another network. For example, use
     an **internet gateway** to connect your VPC to the internet.
-  * Use a *VPC endpoint *to connect to AWS services privately, without
+  * Use a *VPC endpoint* to connect to AWS services privately, without
     the use of an internet gateway or NAT device.
   * Use a *VPC peering* connection to route traffic between the
     resources in two VPCs.
@@ -160,7 +160,7 @@ _*VPC, SUBNETS, NETWORKING*_
     connections.
   * Connect your VPCs to your on-premises networks using *AWS Virtual
     Private Network (AWS VPN)*.
-  * For IPv6, you can use an **Egress-only** internate gateway to allow 
+  * For IPv6, you can use an **Egress-only** internat gateway to allow 
     outbound only communition to the Internet over **IPv6**
 
 
@@ -203,7 +203,7 @@ _*VPC, SUBNETS, NETWORKING*_
 
 *VPC Endpoints*
 
-  * *Interface endpoints***privately** connect your VPC to AWS services,
+  * *Interface endpoints* **privately** connect your VPC to AWS services,
     services hosted by other AWS accounts, and supported AWS Marketplace
     services as if they were in your VPC 
       - powered by *AWS Privatelink*
@@ -215,19 +215,22 @@ _*VPC, SUBNETS, NETWORKING*_
       - Is an ENI with a private IP address, in the subnet that you
         specify, directing traffic to the service that you specify. Uses
         DNS to direct traffic to the service. Protected by a Security Group.
+      - It has cost
   * *Gateway endpoints* direct traffic to S3 or DynamoDB only, using
     private IP addresses.
       o Does not enable AWS Privatelink
       o You route traffic from your VPC to the gateway endpoint using
         route tables. Protected by VPC endpoint policies rather than
         Security Groups.
+      o Is free
 
 
 *3 Types of Network Adapters*
 
  1. ENI - basic type
  2. ENA - for enhanced networking, high bandwidth and low latency
- 3. EFA (fabric adapter) - for high performance computing
+ 3. EFA (fabric adapter) - for high performance computing, improved version of ENA, only
+    available on Linux (not Windows -- if you put EFA on Win you get an ENA)
 
 
 *Security Groups vs. Network ACL (NACL)*
@@ -255,6 +258,8 @@ _*VPC, SUBNETS, NETWORKING*_
   * VPC automatically comes with a default NACL which allows all
     inbound/outbound traffic. A custom NACL denies all inbound/outbound
     traffic by default.
+  * In ACL, remember to open the ephemoral ports (32768 - 65535) to get an answer
+    back from an open inbound port in 
 
 
 *Amazon Route 53*
@@ -514,6 +519,7 @@ _*VPC, SUBNETS, NETWORKING*_
 
   * slow to retrieve, but you can use *Expedited Retrieval* to bring it
     down to just 1-5min.
+  * Can purchase restore capacity
 
 
 *Amazon FSx*
@@ -779,7 +785,7 @@ _*SERVICES FOR ARCHITECTURE*_
      1. *Fargate Launch Type* is serverless, managed by AWS. Comes with 20 GiB of free ephemeral storage
      2. *EC2 Launch Type* gives you direct access to the instances, but
         you have to manage them
-  * ECS uses the  _ECS Service Auto Scaling_ (aka Application Auto
+  * ECS uses the _ECS Service Auto Scaling_ (aka Application Auto
     Scaling) service to scale tasks using a scaling policy that you
     configure.  
   * ECS is about _tasks_. You pay for the running time of tasks. For

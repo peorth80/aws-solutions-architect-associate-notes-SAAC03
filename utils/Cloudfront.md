@@ -4,6 +4,7 @@
 - global
 - regional edge cachhes
 - only http based requests
+- you can set TTL for the objects
 
 ## Origins
 

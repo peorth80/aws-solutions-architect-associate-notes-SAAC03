@@ -15,5 +15,5 @@
 - access on containers on push
 
 ## Integration
-- AWS Security Hub
+- AWS Security Hub (it's an agregator)
 - Send events to event bride

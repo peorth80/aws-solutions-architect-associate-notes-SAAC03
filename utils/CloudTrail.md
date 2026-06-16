@@ -12,6 +12,10 @@
 - ...
 - enabled by default
 - read and write event types
+
+## Query
+- You can use Cloudtrail lake to query the data using SQL
+
 ## Data Events
 - by default no logged
 - e.g. S3 object level activity
